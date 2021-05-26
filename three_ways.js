@@ -9,13 +9,14 @@
 
 const squared = function(num1, num2){
     const aadSquared = num1 * num1 + num2 * num2;
-    const _add= aadSquared * aadSquared;
-    return aadSquared;
-}
+    return aadSquared * aadSquared;
+};
 console.log(squared (3,4));
 
-const doSquareCalculation = (number1, number2) =>
-    square(square(number1) + square(number2));
-    console.log(doSquareCalculation(3,4));
+const doSquareCalculation = (number1, number2) => {
+    const sum = number1 * number1 + number2 * number2;
+    return sum * sum;
+};
+console.log(doSquareCalculation(3,4));
 
 
